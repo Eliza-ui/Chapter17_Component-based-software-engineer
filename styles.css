@@ -1,0 +1,51 @@
+/* Colorful Footer Design */
+footer {
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Deep blue gradient */
+  color: #ffffff;
+  padding: 40px 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 4px solid #ffcc00;
+}
+
+footer nav {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+footer h4 {
+  font-size: 1.4rem;
+  color: #ffcc00;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  margin: 10px 0;
+  font-size: 1.05rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+footer li strong {
+  color: #ffffff;
+}
+
+footer li:hover {
+  color: #ffcc00;
+  transform: translateX(5px);
+  cursor: pointer;
+}
+
+/* Optional: Responsive Footer */
+@media (max-width: 600px) {
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+  }
+}
