@@ -1,5 +1,14 @@
 {
     "vscode-pets.petSize": "large",
     "vscode-pets.theme": "forest",
-    "vscode-pets.throwBallWithMouse": true
+    "vscode-pets.throwBallWithMouse": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "hide-files.files": [],
+    "liveServer.settings.port": 5501
 }
