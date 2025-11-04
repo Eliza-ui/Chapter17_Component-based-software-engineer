@@ -1,1 +1,76 @@
 @import "tailwindcss";
+
+body{
+     @apply m-0 p-0 leading-relaxed text-[#124170] bg-[#DDF4E7] font-sans;
+}
+
+header{
+    @apply bg-[#26667F] text-white text-center px-4 py-7.5;
+}
+
+header h1 {
+  @apply text-4xl m-0 font-bold tracking-[1px];
+}
+
+.container {
+  @apply mx-auto my-12 px-5 grid gap-[25px] max-w-[1000px] [grid-template-columns:repeat(auto-fit,minmax(320px,1fr))];
+}
+
+.flip-card {
+  @apply w-full cursor-pointer bg-transparent h-[320px] perspective-[1000];
+}
+
+.flip-card-inner {
+  @apply relative w-full h-full rounded-[15px] transition-transform duration-800 transition-transform duration-[800ms];
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  @apply absolute w-full h-full rounded-[15px] bg-white border border-[#26667F] shadow-md p-[25px] overflow-y-auto;
+  backface-visibility: hidden;
+}
+
+.flip-card-front h3,
+.flip-card-back h3 {
+  @apply text-[#124170] mt-0;
+}
+
+.flip-card-front p,
+.flip-card-back p {
+  @apply text-base text-justify;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+footer {
+  @apply bg-[#26667F] text-white text-center mt-12 px-[15px] py-[30px];
+}
+
+footer h4 {
+  @apply mb-[10px];
+}
+
+footer ul {
+  @apply list-none m-0 p-0;
+}
+
+footer li {
+  @apply my-[5px];
+}
+
+footer p {
+  @apply mt-[10px] font-bold;
+}
+
+@media (max-width: 768px) {
+  .flip-card {
+    height: 380px;
+  }
+}
